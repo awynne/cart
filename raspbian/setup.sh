@@ -13,3 +13,6 @@ sudo apt-get upgrade
 echo
 echo "Running: $install"
 $install
+
+#git config --global user.name "Adam Wynne"
+#git config --global user.email "awynne@gmail.com"
