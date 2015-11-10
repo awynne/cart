@@ -3,8 +3,8 @@
 use strict;
 
 my $homeDir = $ENV{"HOME"};
-my $cartDir = "$homeDir/cart";
-my @dotFiles = (".myrc", ".bash_profile", ".vimrc");
+my $cartDir = "$homeDir/dev/git-repos/cart";
+my @dotFiles = (".myrc", ".vimrc", ".vim");
 
 if (-e $cartDir) { 
     print "cart directory already exists: $cartDir\n"; 
