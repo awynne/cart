@@ -3,7 +3,7 @@
 use strict;
 
 my $homeDir = $ENV{"HOME"};
-my $cartDir = "$homeDir/dev/git-repos/cart";
+my $cartDir = "$homeDir/dev/git-repos/awynne/cart";
 my @dotFiles = (".myrc", ".vimrc", ".vim");
 
 if (-e $cartDir) { 
