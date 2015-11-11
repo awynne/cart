@@ -11,25 +11,27 @@ export EDITOR=vi
 export PS1="\n\u@\h:\w\n-> "
 
 ## Location of common java tools
-export JAVA_HOME=/home/$USER/local/java/current
-export GRADLE_HOME=/home/$USER/local/gradle/current
-export GROOVY_HOME=/home/$USER/local/groovy/current
-export MAVEN_HOME=/home/$USER/local/maven/current
-export PATH=$JAVA_HOME/bin:$GRADLE_HOME/bin:$GROOVY_HOME/bin:$MAVEN_HOME/bin:$PATH
+export JAVA_HOME="$HOME/local/java/current"
+export GRADLE_HOME="$HOME/local/gradle/current"
+export GROOVY_HOME="$HOME/local/groovy/current"
+export MAVEN_HOME="$HOME/local/maven/current"
+export ECLIPSE_HOME="$HOME/local/eclipse/current"
+export PATH="$JAVA_HOME/bin:$GRADLE_HOME/bin:$GROOVY_HOME/bin:$MAVEN_HOME/bin:$ECLIPSE_HOME/:$PATH"
 
 ## Always use gradle daemon
 alias gradle='gradle --daemon'
 
 ## Uncomment if CNTLM is being used
-#export http_proxy=http://localhost:3128
-#export https_proxy=http://localhost:3128
+export http_proxy=http://localhost:3128
+export https_proxy=http://localhost:3128
 
 ## Uncomment and set these if ANDROID is being used
-#export ANDROID_HOME=
-#export ANDROID_NDK_ROOT=
-#export ANDROID_NDK_HOME=
-#export PATH=$ANDROID_HOME/platform-tools:$PATH:$ANDROID_NDK_ROOT
+export ANDROID_HOME="$HOME/Android/Sdk"
+export ANDROID_NDK_ROOT="$HOME/local/ndk/android-ndk-r10e"
+export ANDROID_NDK_HOME="$HOME/local/ndk/android-ndk-r10e"
+export PATH=$ANDROID_HOME/platform-tools:$PATH:$ANDROID_NDK_ROOT
 
 ## Uncomment and set if central gradlew is used
 #alias gradlew='gradlew --daemon'
 #export GRADLEW_PATH=
+
